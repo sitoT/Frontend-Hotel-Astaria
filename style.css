@@ -177,6 +177,8 @@ header {
       text-transform: uppercase;
   }
 
+/* footer style */
+
   footer {
       margin-top: 5%;
       padding-top: 3%;
@@ -211,7 +213,9 @@ header {
   .social-icon li a {
       color: #ffffff;
   }
+/* end of footer style */
 
+/* media queries */
 @media screen and (min-width: 750px) {
     .contact-details {
         display: flex;
