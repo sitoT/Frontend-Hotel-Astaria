@@ -50,12 +50,13 @@ padding: 3rem 0;
 
 footer a {
 color:#C4C4C4
-
+transition: margin .2s ease-in-out;
 }
 
 footer a:hover {
 color:white;
 text-decoration:none;
+margin-right:3px;
 }
 
 
