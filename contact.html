@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astaria Contact</title>
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+     <!--Font Awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    
+     <!--custom style-->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="container"> 
+            <div class="header-title">
+                <a id="logo" href="#">
+                     HOTEL <br> ASTARIA
+                </a>
+                <nav>
+                    <ul class="hide-menu show-desktop">
+                        <li class="navbar-list">
+                            <a href="#">HOME</a>
+                        </li>
+                        <li class="navbar-list">
+                            <a href="#">ROOMS</a>
+                        </li>
+                        <li class="navbar-list">
+                            <a href="#">SERVICES</a>
+                        </li>
+                        <li class="navbar-list">
+                            <a href="#">BOOK NOW</a>
+                        </li>
+                        <li class="navbar-list">
+                            <a href="#">CONTACT US</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <span id="menu">
+                <i  class="fa fa-bars"></i>
+            </span>
+        </div>
+    </header>
+
+    <section class="Contact">
+        <div class="container">
+            <div class="contact-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-details">
+                <div class="col">
+                    <i class="fas fa-mobile-alt contact-icon"></i>
+                    <h3 class="col-title">Phone</h3>
+                    <p class="col-paragraph"><i class="fas fa-phone-alt"></i> +234 902 374559</p>
+                </div>
+                <div class="col">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <h3 class="col-title">Address</h3>
+                    <p class="col-paragraph">Shamrad Boulevard <br> choara ave, 23918 hillroad</p>
+                </div>
+                <div class="col">
+                    <i class="far fa-envelope contact-icon"></i>
+                    <h3 class="col-title">Email</h3>
+                    <p class="col-paragraph"> info@hotelsastaria.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="enquiries">
+        <div class="container">
+            <div class="send-enquiries">
+                <div class="enquiry-col col-1">
+                    <form action="POST">
+                        <div class="form-col">
+                            <div class=form-span>
+                                <label class="label" for="firstname">First name *</label><br>
+                                <input class="input-col" type="text" name="firstname" required>
+                            </div>
+                            <div class="form-span">
+                                <label class="label" for="lastname">Last name *</label><br>
+                                <input class="input-col" type="text" name="lastname" required>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <div class="form-span">
+                                <label class="label" for="email">Email *</label><br>
+                                <input class="input-col" type="email" name="email" required>
+                            </div>
+                            <div class="form-span">
+                                <label class="label" for="phone"> Phone *</label><br>
+                                <input class="input-col" type="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <div class="form-span-2">
+                                <label class="label" for="subject">Subject *</label><br>
+                                <input class="input-col" type="text" name="subject" required>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <div class="form-span-2">
+                                <label class="label" for="messaage">Your message *</label><br>
+                                <textarea class="input-col" name="" id=""></textarea>
+                            </div>
+                        </div> 
+                        <div class="inquiry-button">
+                            <button>SEND INQUIRY</button>
+                        </div>  
+                    </form>
+                </div>
+                <div class="enquiry-col col-2">
+                    <div class="receptionist"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location">
+        <div class="container">
+            <div class="location-title">
+                <h2>Excellent location</h2>
+            </div>
+            <div id="map"></div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div id="logo">HOTEL <br>ASTARIA</div>
+                <div>
+                    <ul class="footer-list">
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footer-list">
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Bookings</a></li>
+                        <li><a href="#">Travel Plan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="social-title">Social Media</h3>
+                    <ul class="social-icon">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBq8JVt-mmSoSrrFCQQCRnASMxmdeMuQ9Y&callback=initMap">
+    </script>
+</body>
+</html>

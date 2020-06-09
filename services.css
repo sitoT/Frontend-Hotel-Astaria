@@ -1,0 +1,273 @@
+/** @format */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.top {
+	height: 400px;
+	width: 100%;
+	background-image: url("./services-header-background.svg");
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.top header {
+	display: flex;
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+	width: 100%;
+	left: 0;
+	padding: 0 50px;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top header .logo {
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+.top header .logo .larger-text {
+	font-size: 50px;
+}
+.top header nav ul {
+	display: flex;
+}
+.top header nav ul a {
+	color: white;
+	margin: 0 15px;
+}
+
+.top header nav ul a.active {
+	color: orange;
+	margin: 0 30px;
+}
+
+.icon-section {
+	margin-top: 50px;
+}
+.icon-section .icon-text {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.icon-section .icon-item-group {
+	display: flex;
+	justify-content: space-around;
+    margin-bottom: 50px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    flex-wrap: wrap;
+}
+.icon-section .icon-item-group .facilities {
+	max-width: 200px;
+}
+.icon-section .icon-item-group .facilities img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.icon-section .icon-item-group .facilities h5 {
+    height: 30px;
+    margin: 7px 0;
+}
+.icon-section .icon-item-group .facilities p {
+	height: 50px;
+}
+.image-section {
+	display: flex;
+	justify-content: center;
+    max-width: 1000px;
+    flex-wrap: wrap;
+	margin: 0 auto;
+}
+.image-section > p {
+    max-width: 600px;
+    width: 100%;
+    margin-top: 70px;
+    text-align: center;
+}
+.image-section div {
+	margin: 0 10px;
+	height: 350px;
+	width: 300px;
+	background-color: yellow;
+}
+.image-section div img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.newsletter {
+    margin-top: 100px;
+	background-color: #eee;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	min-height: 300px;
+}
+.newsletter h3,
+.newsletter p {
+    text-align: center;
+    margin: 10px 0;
+    max-width: 600px;
+}
+
+.newsletter form {
+    max-width: 500px;
+	width: 100%;
+	margin: 20px auto 0;
+	display: flex;
+	align-items: center;
+	flex-flow: column;
+}
+.newsletter form > * {
+	border-radius: 3px;
+	margin: 0 auto;
+}
+.newsletter form input {
+	border: 1px solid #aaa;
+	background-color: #eee;
+	padding: 15px;
+	max-width: 300px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.newsletter form button {
+	display: block;
+	background-color: rgb(221, 149, 16);
+	border: none;
+	max-width: 200px;
+	width: 100%;
+	padding: 10px;
+	color: white;
+}
+/* footer */
+
+footer {
+    padding-top: 3%;
+    color: #ffffff;
+    background: #333333;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-content {
+    padding: 2rem 10px;
+}
+
+.footer-list li {
+    list-style-type: none;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.social-title {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.social-icon li {
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.social-icon li a {
+    color: #ffffff;
+}
+
+@media screen and (min-width: 750px) {
+  .contact-details {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .col {
+      color: #333333;
+      padding: 30px 15px;
+      width: 33%;
+      border-right: 1px solid #fbb537;
+  }
+
+
+  .col:last-child {
+      border-right: none;
+  }
+
+  .send-enquiries {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+
+  .enquiry-col {
+      color: #333333;
+      padding: 30px 15px;
+      width: 45%;
+  }
+
+  .col-1 {
+      flex: 2;
+  }
+
+  .col-2 {
+      flex: 1;
+  }
+
+  .form-col {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .form-span{
+      width: 50%;
+  }
+
+  .form-span-2{
+      width: 100%;
+  }
+
+  .label {
+      padding: 20px;
+      text-align: left;
+  }
+
+  .input-col {
+      border: 1px solid #333333;
+      padding: 10px;
+      margin: 20px;
+      border-radius: 8px;
+      outline: 0;
+      width: 80%;
+  }
+
+  .form-span-2 .input-col{
+      width: 90%;
+  }
+
+  .footer-content {
+      display: flex;
+      justify-content: space-between;
+  }
+
+}
