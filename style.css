@@ -1,120 +1,342 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@700&family=Playfair+Display+SC:wght@700&family=Roboto+Slab:wght@700&family=Roboto:wght@700&display=swap');
+
+*, html {
+    padding: 0;
+    margin: 0;
 }
 
-#wrapper{
-    font-family: sans-serif;
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-.container{
-    width: 100%;
-    max-width: 100%;
+/* Header styling */
+
+header {
+    height: 50vh;
+    background: url('/contactheader-background.svg') center/cover no-repeat;
+    display: flex;
+    color: #ffffff;
+    position: relative;
+}
+
+.header-title {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 1rem;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+}
+
+#logo {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#menu {
+    top: 20px;
+    right: 50px;
+    cursor: pointer;
+    font-size: 1.5em;
+    position: absolute;
+}
+
+.hide-menu{
+    display: none;
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar-list {
+    padding: 10px 0px;
+    list-style-type: none;
+}
+
+.navbar-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* End of header styling */
+
+/* address styling */
+
+.contact-title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-size: 1.2em;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.contact-details {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.col {
+    color: #333333;
+    padding: 10px 15px;
+}
+
+.contact-icon {
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.col-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 20px 10px;
+}
+
+.col-paragraph {
+    color: #fbb537;
+    font-size: 1.2rem;
+}
+
+
+/* End of address styling */
+
+/* enquiry styling */
+.send-enquiries {
+    margin-bottom: 5%;
+    align-items: center;
+    width: 80%;
     margin: 0 auto;
 }
 
-#subheader{
-    width: 100%;
-    height: 100px;
-    background: rgba(0,0,0,0.6);
-    color: #fff;
-}
-
-.phone-number{
-   color: #fff;
-    position: relative;  
-    cursor: pointer;
-}
-.phone-number p{
-    float: right;
-    margin-top: -1px;
-    padding-left: 15px;
-    padding-top:-30px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-}
-.phone-number:hover{
-    color: #000;
-    transition: all .5s ease;
-}
-.social-icons{
-float: right;
-}
-
-
-#main-header{
-    width: 100%;
-    height: 200px;
-    background: rgba(0,0,0,0.6);
-    float: left;        
-}
-
-#logo{
-    width: 250px;
-   margin-top: -70px;
-    float: left;
-}
-#ist{
-    font-size: 45px;
-    font-weight: bold;
-    margin-left: 15px;
-    font-family: sans-serif;
-    text-align: center;
-    padding-left: 500px;
-    color: #fff;
-    cursor: pointer;
-}
-
-#iist{
-    font-size: 35px;
-    font-weight: bold;
-    font-family: sans-serif;
-    text-align: center;
-    padding-left: 510px;
-    color: #fff;
-    cursor: pointer;
-}
-
-#navigation{
-    width: 100%;
-    height: 35px;
-    float: left;
-    /*box-shadow: 10px 14px 50px 2px rgba(0,0,0,0.6);*/
-    padding-top: 20px;
+.enquiry-col {
+    color: #333333;
+    padding: 10px 15px;
     
 }
 
-nav{
-    width: 1280px;
-    margin: 0 auto;
+.form-col {
+    display: block;
 }
 
-nav a{
-    margin-left: 50px;
-    color: white;
-    text-decoration: none;
-    padding: 35px;  
-    /*border-left: 1px solid white;*/
-    font-size: 15px;
-}
-nav a:hover{
-    color: #000;
-    transition: all .5s ease;   
+.label {
+    padding: 10px;
+    text-align: left;
 }
 
-#text-header{
-    width: 250pz;
-    height: 100px;
-    padding: 90px
+.input-col {
+    border: 1px solid #333333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    outline: 0;
+    width: 100%;
 }
-#text-header h1{
-    padding-left: 200px;
-    color: #fff;
+
+.inquiry-button {
+    text-align: center;
 }
-#text-header h3{
-    padding-left: 250px;
-    color: #fff;
-    margin-top: 10px;
+
+.inquiry-button button{
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: #fbb537;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.receptionist {
+    height: 70vh;
+    background: url('/receptionist.svg') center/cover no-repeat;
+}
+/* End of enquiry styling */
+
+/* Location styling */
+#map {
+    width: 100%;
+    height: 50vh;
+    background-color: grey;
+  }
+
+  .location-title {
+      margin-top: 5%;
+      margin-bottom: 2%;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: 'Cormorant Garamond', serif;
+      text-transform: uppercase;
+  }
+
+  footer {
+      margin-top: 5%;
+      padding-top: 3%;
+      color: #ffffff;
+      background: #333333;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+  }
+
+  .footer-content {
+      padding: 2rem 10px;
+  }
+
+  .footer-list li {
+      list-style-type: none;
+      padding: 10px;
+  }
+
+  .footer-list li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2em;
+  }
+
+  .social-title {
+      font-size: 1.2rem;
+      padding: 10px;
+  }
+
+  .social-icon {
+      text-align: center;
+  }
+
+  .social-icon li {
+      float: left;
+      list-style-type: none;
+      padding: 10px;
+      font-size: 20px;
+  }
+
+  .social-icon li a {
+      color: #ffffff;
+      text-align: center;
+  }
+
+@media screen and (min-width: 750px) {
+    .contact-details {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col {
+        color: #333333;
+        padding: 30px 15px;
+        width: 33%;
+        border-right: 1px solid #fbb537;
+    }
+
+
+    .col:last-child {
+        border-right: none;
+    }
+
+    .send-enquiries {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .enquiry-col {
+        color: #333333;
+        padding: 30px 15px;
+        width: 45%;
+    }
+
+    .col-1 {
+        flex: 2;
+    }
+
+    .col-2 {
+        flex: 1;
+    }
+
+    .form-col {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-span{
+        width: 50%;
+    }
+
+    .form-span-2{
+        width: 100%;
+    }
+
+    .label {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .input-col {
+        border: 1px solid #333333;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 8px;
+        outline: 0;
+        width: 80%;
+    }
+
+    .form-span-2 .input-col{
+        width: 90%;
+    }
+
+    .location-title, .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .show-desktop{
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+
+    .hide-desktop{
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar-list {
+        float: left;
+        font-size: 1em;
+        padding: 3px 45px;
+        margin-top: 37px;
+        margin-bottom: 0;
+        border-right: 1px solid #fff;
+    }
+
+    .navbar-list:last-child{
+        border-right: none;
+    }
 }
