@@ -14,7 +14,7 @@ body {
 /* Header styling */
 
 header {
-    height: 70vh;
+    height: 50vh;
     background: url('/contactheader-background.svg') center/cover no-repeat;
     display: flex;
     color: #ffffff;
@@ -25,7 +25,8 @@ header {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 50px;
+    padding: 1rem;
+    bottom: 20px;
     right: 0;
     left: 0;
 }
@@ -73,9 +74,9 @@ header {
 .contact-title {
     text-align: center;
     text-transform: uppercase;
-    padding-top: 10%;
-    padding-bottom: 5%;
-    font-size: 1.5em;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-size: 1.2em;
     font-family: 'Cormorant Garamond', serif;
 }
 
@@ -171,7 +172,7 @@ header {
       margin-top: 5%;
       margin-bottom: 2%;
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-family: 'Cormorant Garamond', serif;
       text-transform: uppercase;
   }
@@ -191,13 +192,22 @@ header {
 
   .footer-list li {
       list-style-type: none;
-      font-size: 1.2em;
       padding: 10px;
   }
 
+  .footer-list li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2em;
+  }
+
   .social-title {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       padding: 10px;
+  }
+
+  .social-icon {
+      text-align: center;
   }
 
   .social-icon li {
@@ -209,6 +219,7 @@ header {
 
   .social-icon li a {
       color: #ffffff;
+      text-align: center;
   }
 
 @media screen and (min-width: 750px) {
@@ -278,6 +289,10 @@ header {
 
     .form-span-2 .input-col{
         width: 90%;
+    }
+
+    .location-title, .contact-title {
+        font-size: 1.5rem;
     }
 
     .footer-content {
