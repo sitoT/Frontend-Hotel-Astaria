@@ -1,15 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@700&family=Playfair+Display+SC:wght@700&family=Roboto+Slab:wght@700&family=Roboto:wght@700&display=swap');
-
-*, html {
-    padding: 0;
-    margin: 0;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+#wrapper{
+    font-family: sans-serif;
 }
+
+
+.container{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#subheader{
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
 
 /* Header styling */
 
@@ -31,43 +41,40 @@ header {
     left: 0;
 }
 
-#logo {
-    font-size: 2em;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
+.phone-number{
+   color: #fff;
+    position: relative;  
     cursor: pointer;
-    text-decoration: none;
-    color: #ffffff;
 }
-
-#menu {
-    top: 20px;
-    right: 50px;
-    cursor: pointer;
-    font-size: 1.5em;
+.phone-number p{
+    float: right;
+    margin-top: -1px;
+    padding-left: 15px;
+    padding-top:-30px;
+    display: flex;
+    justify-content: center;
     position: absolute;
 }
-
-.hide-menu{
-    display: none;
+.phone-number:hover{
+    color: #000;
+    transition: all .5s ease;
+}
+.social-icons{
+float: right;
+}
+.social-icons a{
+    color: #fff;
+}
+.social-icons a:hover{
+    transition: all .5s ease;
+    color: #000;
 }
 
-.navbar {
-    display: none;
-}
-
-.navbar-list {
-    padding: 10px 0px;
-    list-style-type: none;
-}
-
-.navbar-list a {
-    color: #ffffff;
-    text-decoration: none;
-    font-family: 'Roboto Slab', serif;
-}
-
-/* End of header styling */
+#main-header{
+    width: 100%;
+    height: 200px;
+    background: rgba(0,0,0,0.6);
+    float: left;        
 
 /* address styling */
 
@@ -95,70 +102,74 @@ header {
     color: rgba(0, 0, 0, 0.4);
 }
 
-.col-title {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    padding: 20px 10px;
+#logo{
+    width: 250px;
+   margin-top: -70px;
+    float: left;
+}
+#ist{
+    font-size: 45px;
+    font-weight: bold;
+    margin-left: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-left: 500px;
+    color: #fff;
+    cursor: pointer;
 }
 
-.col-paragraph {
-    color: #fbb537;
-    font-size: 1.2rem;
+#iist{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    padding-left: 510px;
+    color: #fff;
+    cursor: pointer;
 }
 
-
-/* End of address styling */
-
-/* enquiry styling */
-.send-enquiries {
-    margin-bottom: 5%;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.enquiry-col {
-    color: #333333;
-    padding: 10px 15px;
+#navigation{
+    width: 100%;
+    height: 35px;
+    float: left;
+    /*box-shadow: 10px 14px 50px 2px rgba(0,0,0,0.6);*/
+    padding-top: 20px;
     
 }
 
-.form-col {
-    display: block;
+nav{
+    width: 1280px;
+    margin: 0 auto;
 }
 
-.label {
-    padding: 10px;
-    text-align: left;
+nav a{
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    padding: 35px;  
+    /*border-left: 1px solid white;*/
+    font-size: 15px;
+}
+nav a:hover{
+    color: #000;
+    transition: all .5s ease;   
 }
 
-.input-col {
-    border: 1px solid #333333;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 8px;
-    outline: 0;
-    width: 100%;
+#text-header{
+    width: 250pz;
+    height: 100px;
+    padding: 90px
+}
+#text-header h1{
+    padding-left: 200px;
+    color: #fff;
+}
+#text-header h3{
+    padding-left: 250px;
+    color: #fff;
+    margin-top: 10px;
 }
 
-.inquiry-button {
-    text-align: center;
-}
-
-.inquiry-button button{
-    padding: 10px 15px;
-    font-size: 1.5rem;
-    color: #ffffff;
-    background: #fbb537;
-    border: none;
-    border-radius: 8px;
-    font-family: 'Cinzel Decorative', cursive;
-}
-
-.receptionist {
-    height: 70vh;
-    background: url('/receptionist.svg') center/cover no-repeat;
-}
 /* End of enquiry styling */
 
 /* Location styling */
@@ -340,3 +351,4 @@ header {
         border-right: none;
     }
 }
+
