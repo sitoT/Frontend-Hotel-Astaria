@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@700&family=Playfair+Display+SC:wght@700&family=Roboto+Slab:wght@700&family=Roboto:wght@700&display=swap');
+
+*, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header styling */
+
+header {
+    height: 50vh;
+    background: url('/background.svg') center/cover no-repeat;
+    display: flex;
+    color: #ffffff;
+    position: relative;
+}
+
+.header-title {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 1rem;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+}
+
+#logo {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#menu {
+    top: 20px;
+    right: 50px;
+    cursor: pointer;
+    font-size: 1.5em;
+    position: absolute;
+}
+
+.hide-menu{
+    display: none;
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar-list {
+    padding: 10px 0px;
+    list-style-type: none;
+}
+
+.navbar-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* End of header styling */
+
+/* reservation styling */
+.reservation {
+    text-align: center;
+}
+
+.reservation-title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    font-size: 1.2em;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.reservation p {
+    font-size: 1rem;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.5em;
+    padding: 15px 10px;
+}
+
+.reservation-button button{
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background: #fbb537;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+/* End of reservation styling */
+
+/* address styling */
+
+.contact-title, .testimony-title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-size: 1.2em;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.contact-details {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+/* End of address styling */
+
+/* enquiry styling */
+.send-enquiries {
+    margin-bottom: 5%;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.enquiry-col {
+    color: #333333;
+    padding: 10px 15px;
+    
+}
+
+.form-col {
+    display: block;
+}
+
+.label {
+    padding: 10px;
+    text-align: left;
+}
+
+.input-col {
+    border: 1px solid #333333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    outline: 0;
+    width: 100%;
+}
+
+.inquiry-button {
+    text-align: center;
+}
+
+.inquiry-button button{
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background: #fbb537;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.receptionist {
+    height: 50vh;
+    background: url('/image.svg') center/cover no-repeat;
+}
+/* End of enquiry styling */
+
+/* Location styling */
+#map {
+    width: 100%;
+    height: 50vh;
+    background-color: grey;
+  }
+
+  .location-title {
+      margin-top: 5%;
+      margin-bottom: 2%;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: 'Cormorant Garamond', serif;
+      text-transform: uppercase;
+  }
+
+  footer {
+      margin-top: 5%;
+      padding-top: 3%;
+      color: #ffffff;
+      background: #333333;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+  }
+
+  .footer-content {
+      padding: 2rem 10px;
+  }
+
+  .footer-list li {
+      list-style-type: none;
+      padding: 10px;
+  }
+
+  .footer-list li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2em;
+  }
+
+  .social-title {
+      font-size: 1.2rem;
+      padding: 10px;
+  }
+
+  .social-icon {
+      text-align: center;
+  }
+
+  .social-icon li {
+      float: left;
+      list-style-type: none;
+      padding: 10px;
+      font-size: 20px;
+  }
+
+  .social-icon li a {
+      color: #ffffff;
+      text-align: center;
+  }
+
+@media screen and (min-width: 750px) {
+    .contact-details {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .send-enquiries {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .enquiry-col {
+        color: #333333;
+        padding: 30px 15px;
+        width: 45%;
+    }
+
+    .form-col {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-span{
+        width: 50%;
+    }
+
+    .form-span-2{
+        width: 100%;
+    }
+
+    .label {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .input-col {
+        border: 1px solid #333333;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 8px;
+        outline: 0;
+        width: 80%;
+    }
+
+    .form-span-2 .input-col{
+        width: 90%;
+    }
+
+    .reservation-title, 
+    .contact-title,
+    .testimony-title {
+        font-size: 1.5rem;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .prof {
+        font-family: sans-serif;
+        text-align: center;
+        width: 33.333333%;
+        margin: 2rem;
+        /* box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 20px; */
+    }
+
+    .profile-card {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem;
+        box-sizing: border-box;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .show-desktop{
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+
+    .hide-desktop{
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar-list {
+        float: left;
+        font-size: 1em;
+        padding: 3px 45px;
+        margin-top: 37px;
+        margin-bottom: 0;
+        border-right: 1px solid #fff;
+    }
+
+    .navbar-list:last-child{
+        border-right: none;
+    }
+}
+
+.prof {
+    font-family: sans-serif;
+    text-align: center;
+    max-width: 250px;
+    margin: 2rem auto;
+    /* /* box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; 
+    padding: 10px; */
+    cursor: pointer;
+}
+
+.prof__image {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    display: block;
+}
+
+.col-paragraph {
+    margin-bottom: 10px;
+    line-height: 1rem;
+}
+
+.profile-title {
+    margin-bottom: 20px;
+}
+
+.profile-link {
+    padding: 15px;
+    margin: 10px;
+    color: #fbb537;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8);
+    height: 15px;
+    width: 15px;
+    padding: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+      color: #ffffff;
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+.mySlides p {
+    line-height: 1.5rem;
+}
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+      padding: 10px;
+      border-radius: 50%;
+    background-color: orange;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  .col-2 {
+    order: 1;
+}
+
+.col-2 {
+    order: 2;
+}
