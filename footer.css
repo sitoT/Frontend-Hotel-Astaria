@@ -48,6 +48,17 @@ padding: 3rem 0;
 
 }
 
+footer a {
+color:#C4C4C4
+
+}
+
+footer a:hover {
+color:white;
+text-decoration:none;
+}
+
+
 footer hr {
 margin-top: 3rem ;
 width: 100%;
