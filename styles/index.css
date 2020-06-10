@@ -1,0 +1,266 @@
+/** @format */
+
+.major_container {
+	width: 100%;
+	height: auto;
+	background-color: #ffffff;
+}
+.head {
+	width: 100%;
+	height: 500px;
+	background-color: lightgrey;
+	display: inline-block;
+}
+.rowbar {
+	background-color: yellow;
+}
+.num {
+	width: 25%;
+	height: 100px;
+	display: inline-block;
+	float: left;
+	padding: 20px 0 0 30px;
+}
+.astaria {
+	width: 25%;
+	height: 100px;
+	float: left;
+	padding: 6px 0 0 236px;
+	display: inline-block;
+}
+.social {
+	width: 25%;
+	height: 100px;
+	float: right;
+	display: inline-block;
+	padding: 20px 0 0 30px;
+}
+#con {
+	color: whitesmoke;
+	font-size: 15px;
+	padding-right: 5px;
+}
+#navbar {
+	width: 100%;
+	height: 90px;
+	background-color: lightgrey;
+}
+#nav {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+	padding-top: 0;
+}
+#bar a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 10px;
+}
+#bar li {
+	width: 100px;
+	display: inline-block;
+	text-align: CENTER;
+	margin-top: 49px;
+	border-right: 1px solid #ffffff;
+}
+#bar {
+	margin: 0;
+	padding: 0;
+}
+.luxury {
+    max-width: 500px;
+    margin: 120px auto 0;
+    text-align: center;
+}
+.redef {
+	font-family: "DISPLAY";
+	color: whitesmoke;
+}
+.redef3 {
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+	color: whitesmoke;
+	font-family: "ROBOTO";
+}
+.enjoy {
+	width: 80%;
+	height: 100px;
+	margin-top: 122px;
+	margin-left: 145px;
+}
+#cormorant {
+	font-family: "GARAMOND";
+	font-weight: bold;
+}
+#relax {
+	font-family: "GARAMOND";
+	font-weight: bold;
+}
+.lorem {
+	text-align: justify;
+	font-family: "ROBOTO";
+}
+.relax {
+	width: 80%;
+	height: 100px;
+	margin-top: 122px;
+	margin-left: 3px;
+}
+#photo {
+	width: 100%;
+	height: 50px;
+}
+.gallery {
+	text-align: center;
+	font-family: "CORMORANT";
+	font-size: 30px;
+	font-weight: bold;
+}
+#gallery1 {
+	margin: 160px 0 0 150px;
+	width: 80%;
+}
+#room {
+	margin: 160px 0 0 150px;
+}
+.luroom {
+	margin-top: 30px;
+	font-weight: bold;
+	color: black;
+	font-family: "ROBOTO";
+}
+#view {
+	width: 300px;
+	height: 50px;
+	background-color: orangered;
+	border-radius: 4px;
+	margin-top: 50px;
+}
+.link {
+	text-align: center;
+	font-family: "CORMORANT";
+	font-size: 30px;
+}
+
+footer {
+    margin-top: 5%;
+    padding-top: 3%;
+    color: #ffffff;
+    background: #333333;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-content {
+    padding: 2rem 10px;
+}
+
+.footer-list li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.footer-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.social-title {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.social-icon {
+    text-align: center;
+}
+
+.social-icon li {
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.social-icon li a {
+    color: #ffffff;
+    text-align: center;
+}
+@media screen and (min-width: 750px) {
+    .contact-details {
+        display: flex;
+        justify-content: space-between;
+    }
+  
+    .col {
+        color: #333333;
+        padding: 30px 15px;
+        width: 33%;
+        border-right: 1px solid #fbb537;
+    }
+  
+  
+    .col:last-child {
+        border-right: none;
+    }
+  
+    .send-enquiries {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+  
+    .enquiry-col {
+        color: #333333;
+        padding: 30px 15px;
+        width: 45%;
+    }
+  
+    .col-1 {
+        flex: 2;
+    }
+  
+    .col-2 {
+        flex: 1;
+    }
+  
+    .form-col {
+        display: flex;
+        justify-content: space-between;
+    }
+  
+    .form-span{
+        width: 50%;
+    }
+  
+    .form-span-2{
+        width: 100%;
+    }
+  
+    .label {
+        padding: 20px;
+        text-align: left;
+    }
+  
+    .input-col {
+        border: 1px solid #333333;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 8px;
+        outline: 0;
+        width: 80%;
+    }
+  
+    .form-span-2 .input-col{
+        width: 90%;
+    }
+  
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+  
+  }
