@@ -1,0 +1,142 @@
+.major_container{
+    width:100%;
+    height: auto;
+    background-color: #ffffff;
+}
+.head{
+    width: 100%;
+    height: 500px;
+    background-color:lightgrey;
+    display: inline-block;
+}
+.rowbar{
+    background-color: yellow;
+}
+.num{
+width: 25%;
+height: 100px;
+display: inline-block;
+float: left;
+padding:20px 0 0 30px;
+}
+.astaria{
+    width: 25%;
+    height: 100px;
+    float: left;
+    padding:6px 0 0 236px ;
+    display: inline-block;
+}
+.social{
+    width: 25%;
+    height: 100px;
+    float: right;
+    display: inline-block;
+    padding:20px 0 0 30px;
+}
+#con{
+    color: whitesmoke; 
+    font-size: 15px;
+    padding-right: 5px;
+}
+#navbar{
+    width:100%;
+    height:90px;
+    background-color: lightgrey;
+}
+#nav{
+    width: 100%;
+    padding-top: 100px;
+}
+#bar a{
+text-decoration: none;
+color: #ffffff;
+font-size: 10px;
+}
+#bar li{
+ width: 14%;
+ display: inline-block;
+ text-align: CENTER;
+ margin-top: 49px;
+border-right: 1px solid  #ffffff;
+
+}
+#bar{
+    margin: 0;
+    padding:0;
+}
+.luxury{
+    padding: 150px 0 0 35%;
+}
+.redef{
+    font-family: 'DISPLAY';
+    color: whitesmoke;
+}
+.luxury3{
+    padding-left: 42%;
+}
+.redef3{
+    color: whitesmoke;
+    font-family: 'ROBOTO';
+}
+.enjoy{
+    width: 80%;
+    height: 100px;
+    margin-top: 122px;
+    margin-left: 145px
+}
+#cormorant{
+    font-family: 'GARAMOND';
+    font-weight: bold;
+
+}
+#relax{
+    font-family: 'GARAMOND'; 
+    font-weight: bold;
+}
+.lorem{
+    text-align: justify;
+    font-family: 'ROBOTO';
+}
+.relax{
+    width: 80%;
+    height: 100px;
+    margin-top: 122px;
+    margin-left: 3px
+}
+#photo{
+    width: 100%;
+    height: 50px;
+}
+.gallery{
+        text-align: center;
+        font-family: 'CORMORANT';
+        font-size: 30px;
+    font-weight: bold;
+
+}
+#gallery1{
+    margin: 160px 0 0 150px;
+    width: 80%;
+}
+#room{
+    margin: 160px 0 0 150px;
+}
+.luroom{
+    margin-top: 30px;
+    font-weight: bold;
+    color: black;
+    font-family: 'ROBOTO';
+}
+#view{
+    width: 300px;
+    height: 50px;
+    background-color: orangered;
+    border-radius: 4px;
+    margin-top: 50px;
+}
+.link{
+    text-align: center;
+    font-family: 'CORMORANT';
+font-size: 30px;
+    ;
+}
