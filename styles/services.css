@@ -20,7 +20,7 @@ ul {
 .top {
 	height: 400px;
 	width: 100%;
-	background-image: url("./services-header-background.svg");
+	background-image: url("../images/services-header-background.svg");
 	background-repeat: no-repeat;
 	position: relative;
 }
@@ -161,7 +161,6 @@ ul {
 	color: white;
 }
 /* footer */
-
 footer {
     padding-top: 3%;
     color: #ffffff;
@@ -176,13 +175,22 @@ footer {
 
 .footer-list li {
     list-style-type: none;
-    font-size: 1.2em;
     padding: 10px;
 }
 
+.footer-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
 .social-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 10px;
+}
+
+.social-icon {
+    text-align: center;
 }
 
 .social-icon li {
@@ -194,6 +202,7 @@ footer {
 
 .social-icon li a {
     color: #ffffff;
+    text-align: center;
 }
 
 @media screen and (min-width: 750px) {
